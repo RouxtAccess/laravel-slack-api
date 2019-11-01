@@ -1,5 +1,5 @@
 {
-    "name": "wgmv/laravel-slack-api",
+    "name": "jakebathman/laravel-slack-api",
     "description": "Wrapper for Slack.com WEB API. Based on code from Vagner do Carmo.",
     "license": "MIT",
     "keywords":["Laravel", "Lumen", "Slack"],
@@ -13,16 +13,21 @@
             "name": "Walter Vogel",
             "email": "walter@wgmv.de",
             "role": "Contributor"
+        },
+        {
+            "name": "Jake Bathman",
+            "email": "jake.bathman@gmail.com",
+            "role": "Contributor"
         }
     ],
     "require": {
         "php": ">=5.5.9",
-        "illuminate/support": "~5.0",
-        "illuminate/cache": "~5.0",
+        "illuminate/support": "~5.0|^6.0",
+        "illuminate/cache": "~5.0|^6.0",
         "guzzlehttp/guzzle":"~5.3|~6.0"
     },
     "require-dev": {
-      "phpunit/phpunit": "~6.0",
+      "phpunit/phpunit": ">=6.0",
       "mockery/mockery": "0.9.*"
     },
     "autoload": {
