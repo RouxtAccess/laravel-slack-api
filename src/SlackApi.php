@@ -4,6 +4,7 @@ namespace Wgmv\SlackApi;
 
 use GuzzleHttp\Client;
 use Illuminate\Support\Traits\Macroable;
+use Illuminate\Support\Str;
 use Wgmv\SlackApi\Contracts\SlackApi as Contract;
 
 class SlackApi implements Contract
@@ -130,7 +131,7 @@ class SlackApi implements Contract
      */
     public function load($method)
     {
-        if (str_contains($method, '.')) {
+        if (Str::contains($method, '.')) {
             return app($method);
         }
 
@@ -263,7 +264,7 @@ class SlackApi implements Contract
      */
     protected function getUrl($method = null)
     {
-        return str_finish($this->url, '/').$method;
+        return Str::finish($this->url, '/').$method;
     }
 
     /**

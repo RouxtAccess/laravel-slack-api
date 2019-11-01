@@ -2,6 +2,7 @@
 
 namespace Wgmv\SlackApi;
 
+use Illuminate\Support\Arr;
 use Illuminate\Support\ServiceProvider;
 
 class SlackApiServiceProvider extends ServiceProvider
@@ -38,7 +39,7 @@ class SlackApiServiceProvider extends ServiceProvider
     public function register()
     {
         /* Lumen autoload services configs */
-        if (str_contains($this->app->version(), 'Lumen')) {
+        if (Str::contains($this->app->version(), 'Lumen')) {
             $this->app->configure('services');
         }
 
