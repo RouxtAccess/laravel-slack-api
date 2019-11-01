@@ -53,7 +53,7 @@ class SlackApiServiceProvider extends ServiceProvider
 
             $contract = "Wgmv\SlackApi\Contracts\Slack".$method;
             $class = "Wgmv\SlackApi\Methods\\".$method;
-            $shortcut = "slack.".snake_case($method);
+            $shortcut = "slack.".Str::snake($method);
 
             $this->app->singleton($contract, function () use ($class) {
                 return new $class($this->app['slack.api']);
@@ -74,7 +74,7 @@ class SlackApiServiceProvider extends ServiceProvider
         $shortcuts[] = 'slack.api';
 
         foreach ($this->methods as $method) {
-            $shortcuts[] = $shortcut = "slack.".snake_case($method);
+            $shortcuts[] = $shortcut = "slack.".Str::snake($method);
         }
         return $shortcuts;
     }
