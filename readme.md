@@ -1,3 +1,5 @@
+**Note: This has been forked from wgmv/laravel-slack-api to add Laravel 6.x support.**
+
 ## Laravel 5 and Lumen - Slack API
 
 [![Latest Stable Version](https://poser.pugx.org/wgmv/laravel-slack-api/version)](https://packagist.org/packages/wgmv/laravel-slack-api)
