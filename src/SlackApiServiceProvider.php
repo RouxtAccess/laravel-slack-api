@@ -2,7 +2,7 @@
 
 namespace Wgmv\SlackApi;
 
-use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
 use Illuminate\Support\ServiceProvider;
 
 class SlackApiServiceProvider extends ServiceProvider
