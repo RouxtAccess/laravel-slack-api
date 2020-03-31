@@ -2,6 +2,7 @@
 
 namespace Wgmv\SlackApi\Methods;
 
+use Illuminate\Support\Arr;
 use Wgmv\SlackApi\Contracts\SlackChannel;
 
 class Channel extends SlackMethod implements SlackChannel
@@ -60,7 +61,7 @@ class Channel extends SlackMethod implements SlackChannel
      */
     public function history($channel, $options = [])
     {
-        return $this->method('history', array_merge(compact('channel'), $options));
+        return $this->method('history', array_merge(compact('channel'), Arr::wrap($options)));
     }
 
     /**
