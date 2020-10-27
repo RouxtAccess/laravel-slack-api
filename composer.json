@@ -1,5 +1,5 @@
 {
-    "name": "jakebathman/laravel-slack-api",
+    "name": "rouxtaccess/laravel-slack-api",
     "description": "Wrapper for Slack.com WEB API. Based on code from Vagner do Carmo.",
     "license": "MIT",
     "keywords":["Laravel", "Lumen", "Slack"],
@@ -11,19 +11,24 @@
         },
         {
             "name": "Walter Vogel",
-            "email": "walter@wgmv.de",
+            "email": "walter@RouxtAccess.de",
             "role": "Contributor"
         },
         {
             "name": "Jake Bathman",
             "email": "jake.bathman@gmail.com",
             "role": "Contributor"
+        },
+        {
+            "name": "John Roux",
+            "email": "cto@rouxtaccess.com",
+            "role": "Contributor"
         }
     ],
     "require": {
         "php": ">=7.2",
-        "illuminate/support": ">=5.0",
-        "illuminate/cache": ">=5.0",
+        "illuminate/support": "^5.0|^6.0|^7.0|^8.0",
+        "illuminate/cache": "^5.0|^6.0|^7.0|^8.0",
         "guzzlehttp/guzzle":">=5.3"
     },
     "require-dev": {
@@ -32,7 +37,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Wgmv\\SlackApi\\": "src/"
+            "RouxtAccess\\SlackApi\\": "src/"
         },
         "files" : [
             "src/helpers.php"
@@ -40,28 +45,28 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Wgmv\\SlackApi\\Tests\\": "tests/"
+            "RouxtAccess\\SlackApi\\Tests\\": "tests/"
         }
     },
     "extra": {
       "laravel": {
           "providers": [
-              "Wgmv\\SlackApi\\SlackApiServiceProvider"
+              "RouxtAccess\\SlackApi\\SlackApiServiceProvider"
           ],
           "aliases": {
-              "SlackApi": "Wgmv\\SlackApi\\Facades\\SlackApi",
-              "SlackChannel": "Wgmv\\SlackApi\\Facades\\SlackChannel",
-              "SlackChat": "Wgmv\\SlackApi\\Facades\\SlackChat",
-              "SlackConversation": "Wgmv\\SlackApi\\Facades\\SlackConversation",
-              "SlackGroup": "Wgmv\\SlackApi\\Facades\\SlackGroup",
-              "SlackFile": "Wgmv\\SlackApi\\Facades\\SlackFile",
-              "SlackSearch" : "Wgmv\\SlackApi\\Facades\\SlackSearch",
-              "SlackInstantMessage": "Wgmv\\SlackApi\\Facades\\SlackInstantMessage",
-              "SlackUser": "Wgmv\\SlackApi\\Facades\\SlackUser",
-              "SlackStar": "Wgmv\\SlackApi\\Facades\\SlackStar",
-              "SlackUserAdmin": "Wgmv\\SlackApi\\Facades\\SlackUserAdmin",
-              "SlackRealTimeMessage": "Wgmv\\SlackApi\\Facades\\SlackRealTimeMessage",
-              "SlackTeam": "Wgmv\\SlackApi\\Facades\\SlackTeam"
+              "SlackApi": "RouxtAccess\\SlackApi\\Facades\\SlackApi",
+              "SlackChannel": "RouxtAccess\\SlackApi\\Facades\\SlackChannel",
+              "SlackChat": "RouxtAccess\\SlackApi\\Facades\\SlackChat",
+              "SlackConversation": "RouxtAccess\\SlackApi\\Facades\\SlackConversation",
+              "SlackGroup": "RouxtAccess\\SlackApi\\Facades\\SlackGroup",
+              "SlackFile": "RouxtAccess\\SlackApi\\Facades\\SlackFile",
+              "SlackSearch" : "RouxtAccess\\SlackApi\\Facades\\SlackSearch",
+              "SlackInstantMessage": "RouxtAccess\\SlackApi\\Facades\\SlackInstantMessage",
+              "SlackUser": "RouxtAccess\\SlackApi\\Facades\\SlackUser",
+              "SlackStar": "RouxtAccess\\SlackApi\\Facades\\SlackStar",
+              "SlackUserAdmin": "RouxtAccess\\SlackApi\\Facades\\SlackUserAdmin",
+              "SlackRealTimeMessage": "RouxtAccess\\SlackApi\\Facades\\SlackRealTimeMessage",
+              "SlackTeam": "RouxtAccess\\SlackApi\\Facades\\SlackTeam"
           }
       }
 },
