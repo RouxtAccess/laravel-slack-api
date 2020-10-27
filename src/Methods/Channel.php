@@ -1,9 +1,9 @@
 <?php
 
-namespace Wgmv\SlackApi\Methods;
+namespace RouxtAccess\SlackApi\Methods;
 
 use Illuminate\Support\Arr;
-use Wgmv\SlackApi\Contracts\SlackChannel;
+use RouxtAccess\SlackApi\Contracts\SlackChannel;
 
 class Channel extends SlackMethod implements SlackChannel
 {

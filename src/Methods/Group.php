@@ -1,8 +1,8 @@
 <?php
 
-namespace Wgmv\SlackApi\Methods;
+namespace RouxtAccess\SlackApi\Methods;
 
-use Wgmv\SlackApi\Contracts\SlackGroup;
+use RouxtAccess\SlackApi\Contracts\SlackGroup;
 
 class Group extends Channel implements SlackGroup
 {

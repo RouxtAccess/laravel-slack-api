@@ -4,7 +4,7 @@ namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
 use Mockery;
-use Wgmv\SlackApi\Methods\User;
+use RouxtAccess\SlackApi\Methods\User;
 
 
 class UserTest extends TestCase
@@ -20,7 +20,7 @@ class UserTest extends TestCase
 	{
 		parent::setUp();
 
-		$this->api = Mockery::mock('Wgmv\SlackApi\Contracts\SlackApi');
+		$this->api = Mockery::mock('RouxtAccess\SlackApi\Contracts\SlackApi');
 		$this->user = new User($this->api);
 
         $this->fake_response = new \stdClass();

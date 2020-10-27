@@ -1,8 +1,8 @@
 <?php
 
-namespace Wgmv\SlackApi\Methods;
+namespace RouxtAccess\SlackApi\Methods;
 
-use Wgmv\SlackApi\Contracts\SlackSearch;
+use RouxtAccess\SlackApi\Contracts\SlackSearch;
 
 class Search extends SlackMethod implements SlackSearch
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Wgmv\SlackApi\Methods;
+namespace RouxtAccess\SlackApi\Methods;
 
-use Wgmv\SlackApi\Contracts\SlackTeam;
+use RouxtAccess\SlackApi\Contracts\SlackTeam;
 
 class Team extends SlackMethod implements SlackTeam
 {

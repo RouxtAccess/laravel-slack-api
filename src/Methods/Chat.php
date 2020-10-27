@@ -1,8 +1,8 @@
 <?php
 
-namespace Wgmv\SlackApi\Methods;
+namespace RouxtAccess\SlackApi\Methods;
 
-use Wgmv\SlackApi\Contracts\SlackChat;
+use RouxtAccess\SlackApi\Contracts\SlackChat;
 
 class Chat extends SlackMethod implements SlackChat
 {
@@ -23,7 +23,7 @@ class Chat extends SlackMethod implements SlackChat
      *    "as_user"  => true, // Pass true to delete the message as the authed user. Bot users in this context are considered authed users.
      * ]
      *</pre>
-
+S
      * @return array
      */
     public function delete($channel, $ts, $options = [])

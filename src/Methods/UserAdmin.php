@@ -1,8 +1,8 @@
 <?php
 
-namespace Wgmv\SlackApi\Methods;
+namespace RouxtAccess\SlackApi\Methods;
 
-use Wgmv\SlackApi\Contracts\SlackUserAdmin;
+use RouxtAccess\SlackApi\Contracts\SlackUserAdmin;
 
 class UserAdmin extends SlackMethod implements SlackUserAdmin
 {

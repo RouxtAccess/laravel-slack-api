@@ -1,8 +1,8 @@
 <?php
 
-namespace Wgmv\SlackApi\Methods;
+namespace RouxtAccess\SlackApi\Methods;
 
-use Wgmv\SlackApi\Contracts\SlackConversation;
+use RouxtAccess\SlackApi\Contracts\SlackConversation;
 
 class Conversation extends SlackMethod implements SlackConversation
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Wgmv\SlackApi;
+namespace RouxtAccess\SlackApi;
 
 use Illuminate\Support\Str;
 use Illuminate\Support\ServiceProvider;
@@ -43,16 +43,16 @@ class SlackApiServiceProvider extends ServiceProvider
             $this->app->configure('services');
         }
 
-        $this->app->singleton('Wgmv\SlackApi\Contracts\SlackApi', function () {
+        $this->app->singleton('RouxtAccess\SlackApi\Contracts\SlackApi', function () {
             return new SlackApi(null, config('services.slack.token'));
         });
 
-        $this->app->alias('Wgmv\SlackApi\Contracts\SlackApi', 'slack.api');
+        $this->app->alias('RouxtAccess\SlackApi\Contracts\SlackApi', 'slack.api');
 
         foreach ($this->methods as $method) {
 
-            $contract = "Wgmv\SlackApi\Contracts\Slack".$method;
-            $class = "Wgmv\SlackApi\Methods\\".$method;
+            $contract = "RouxtAccess\SlackApi\Contracts\Slack".$method;
+            $class = "RouxtAccess\SlackApi\Methods\\".$method;
             $shortcut = "slack.".Str::snake($method);
 
             $this->app->singleton($contract, function () use ($class) {

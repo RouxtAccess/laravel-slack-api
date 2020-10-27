@@ -1,8 +1,8 @@
 <?php
 
-namespace Wgmv\SlackApi\Methods;
+namespace RouxtAccess\SlackApi\Methods;
 
-use Wgmv\SlackApi\Contracts\SlackRealTimeMessage;
+use RouxtAccess\SlackApi\Contracts\SlackRealTimeMessage;
 
 class RealTimeMessage extends SlackMethod implements SlackRealTimeMessage
 {

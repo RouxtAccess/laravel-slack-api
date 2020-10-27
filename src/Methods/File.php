@@ -1,8 +1,8 @@
 <?php
 
-namespace Wgmv\SlackApi\Methods;
+namespace RouxtAccess\SlackApi\Methods;
 
-use Wgmv\SlackApi\Contracts\SlackFile;
+use RouxtAccess\SlackApi\Contracts\SlackFile;
 
 class File extends SlackMethod implements SlackFile
 {

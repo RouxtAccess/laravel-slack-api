@@ -1,8 +1,8 @@
 <?php
 
-namespace Wgmv\SlackApi\Methods;
+namespace RouxtAccess\SlackApi\Methods;
 
-use Wgmv\SlackApi\Contracts\SlackInstantMessage;
+use RouxtAccess\SlackApi\Contracts\SlackInstantMessage;
 
 class InstantMessage extends SlackMethod implements SlackInstantMessage
 {

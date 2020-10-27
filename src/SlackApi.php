@@ -1,11 +1,11 @@
 <?php
 
-namespace Wgmv\SlackApi;
+namespace RouxtAccess\SlackApi;
 
 use GuzzleHttp\Client;
 use Illuminate\Support\Traits\Macroable;
 use Illuminate\Support\Str;
-use Wgmv\SlackApi\Contracts\SlackApi as Contract;
+use RouxtAccess\SlackApi\Contracts\SlackApi as Contract;
 
 class SlackApi implements Contract
 {

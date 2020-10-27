@@ -1,6 +1,6 @@
 <?php
 
-namespace Wgmv\SlackApi\Contracts;
+namespace RouxtAccess\SlackApi\Contracts;
 
 interface SlackGroup extends SlackChannel
 {

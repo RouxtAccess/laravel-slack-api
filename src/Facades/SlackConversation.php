@@ -1,6 +1,6 @@
 <?php
 
-namespace Wgmv\SlackApi\Facades;
+namespace RouxtAccess\SlackApi\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

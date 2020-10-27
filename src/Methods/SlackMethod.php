@@ -1,8 +1,8 @@
 <?php
 
-namespace Wgmv\SlackApi\Methods;
+namespace RouxtAccess\SlackApi\Methods;
 
-use Wgmv\SlackApi\Contracts\SlackApi;
+use RouxtAccess\SlackApi\Contracts\SlackApi;
 
 abstract class SlackMethod
 {
@@ -13,12 +13,12 @@ abstract class SlackMethod
     protected $methodsGroup = 'api.';
 
     /**
-     * @var \Wgmv\SlackApi\Contracts\SlackApi
+     * @var \RouxtAccess\SlackApi\Contracts\SlackApi
      */
     protected $api;
 
     /**
-     * @param \Wgmv\SlackApi\Contracts\SlackApi  $api
+     * @param \RouxtAccess\SlackApi\Contracts\SlackApi  $api
      */
     public function __construct(SlackApi $api)
     {
@@ -41,7 +41,7 @@ abstract class SlackMethod
 
     /**
      * Returns the api.
-     * @return \Wgmv\SlackApi\Contracts\SlackApi
+     * @return \RouxtAccess\SlackApi\Contracts\SlackApi
      */
     public function getApi()
     {

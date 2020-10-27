@@ -5,9 +5,9 @@
  * Date: 16/06/15
  * Time: 02:43.
  */
-namespace Wgmv\SlackApi\Methods;
+namespace RouxtAccess\SlackApi\Methods;
 
-use Wgmv\SlackApi\Contracts\SlackStar;
+use RouxtAccess\SlackApi\Contracts\SlackStar;
 
 class Star extends SlackMethod implements SlackStar
 {
